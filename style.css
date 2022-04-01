@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-item {
+  justify-content: center;
+  align-content: center;
+}
+.nave-area {
+  z-index: 1;
+  border-bottom: 1px solid gainsboro;
+  margin: 0px 30px;
+}
+.manu-logo {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+.header-area {
+  background-image: url(img/PHOTO-2022-03-1.png);
+  background-size: unset;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 31rem;
+  object-fit: contain;
+}
+.hauf-box {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 3px solid transparent;
+  border-left: 883px solid white;
+  border-bottom: 674px solid transparent;
+  top: 0px;
+  left: 0px;
+}
+.hauf-conten {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  top: 153px;
+  left: 15px;
+}
+.hauf-conten-img {
+  width: 553px;
+  object-fit: contain;
+}
+.hauf-conten button {
+}
+.header-footer {
+  background-color: #2081ef;
+  padding: 56px;
+  justify-content: center;
+  align-items: center;
+}
+.hand-img {
+  display: flex;
+  justify-content: center;
+}
+.hand-img img {
+  width: 197px;
+  height: 242px;
+}
+.mid-section {
+  background-color: white;
+  padding: 56px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.mid-hauf {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 282px solid green;
+  border-left: 3px solid transparent;
+  border-bottom: 427px solid transparent;
+  right: 0;
+  top: -32px;
+}
+.mid-contain {
+  z-index: 1;
+}
+.albam img {
+  width: 410px;
+}
+.albam {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.mid-button {
+  margin-top: 60px;
+  text-align: center;
+}
+.mid-button a {
+  text-decoration: none;
+  background-color: forestgreen;
+  color: white;
+  padding: 20px;
+  font-weight: bolder;
+  border-radius: 50px;
+}
+.fotter-hauf {
+  width: 0;
+  height: 0;
+  border-right: 1262px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 494px solid gray;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+.fotter-area {
+  margin-top: 65px;
+  height: 388px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.fotter-area-img img {
+  width: 822px;
+  height: 24rem;
+  object-fit: contain;
+}
+.fotter-area-img {
+  padding-left: 40px;
+}
+.input-area {
+  padding: 17px;
+  width: 500px;
+  background-color: #2077db;
+  border-radius: 10px 0px 10px 0px;
+}
+.input-conten {
+}
+.input-wrtie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-fild {
+}

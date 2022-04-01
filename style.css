@@ -3,6 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+.bg-color {
+  background-image: url(img/PHOTO-2022-03-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
 .nav-item {
   justify-content: center;
   align-content: center;
@@ -10,29 +20,25 @@
 .nave-area {
   z-index: 1;
   border-bottom: 1px solid gainsboro;
-  margin: 0px 30px;
+  padding: 0px 30px;
+  width: 100%;
 }
 .manu-logo {
   width: 200px;
   height: 100px;
   object-fit: cover;
 }
-.header-area {
-  background-image: url(img/PHOTO-2022-03-1.png);
-  background-size: unset;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  height: 31rem;
-  object-fit: contain;
+.hauf-style {
+  width: 50vh;
+  position: absolute;
 }
 .hauf-box {
   position: absolute;
-  width: 0;
+  width: auto;
   height: 0;
   border-right: 3px solid transparent;
   border-left: 883px solid white;
-  border-bottom: 674px solid transparent;
+  border-bottom: 817px solid transparent;
   top: 0px;
   left: 0px;
 }
@@ -44,20 +50,24 @@
   left: 15px;
 }
 .hauf-conten-img {
-  width: 553px;
+  width: 414px;
   object-fit: contain;
 }
 .hauf-conten button {
 }
 .header-footer {
   background-color: #2081ef;
-  padding: 56px;
   justify-content: center;
   align-items: center;
+  color: white;
+  width: 100%;
+  padding: 36px;
+  margin: 0;
 }
 .hand-img {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 .hand-img img {
   width: 197px;
@@ -77,11 +87,18 @@
   border-right: 282px solid green;
   border-left: 3px solid transparent;
   border-bottom: 427px solid transparent;
-  right: 0;
+  right: 12px;
   top: -32px;
 }
 .mid-contain {
   z-index: 1;
+}
+
+.mid-contain img {
+  width: 235px;
+}
+.mid-contain p {
+  color: black;
 }
 .albam img {
   width: 410px;
@@ -103,7 +120,7 @@
   font-weight: bolder;
   border-radius: 50px;
 }
-.fotter-hauf {
+/* .fotter-hauf {
   width: 0;
   height: 0;
   border-right: 1262px solid transparent;
@@ -112,7 +129,7 @@
   position: absolute;
   z-index: -1;
   bottom: 0;
-}
+} */
 .fotter-area {
   margin-top: 65px;
   height: 388px;
@@ -135,12 +152,205 @@
   background-color: #2077db;
   border-radius: 10px 0px 10px 0px;
 }
-.input-conten {
-}
+
 .input-wrtie {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .input-fild {
+}
+.footer {
+  background-image: linear-gradient(
+      rgba(28, 57, 89, 0.637),
+      rgba(28, 57, 89, 0.651)
+    ),
+    url("img/footer\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-logo {
+  width: 200px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.social-icon img {
+  width: 70px;
+  height: 70px;
+}
+.footer-manue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-manue a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .hauf-box {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-left: 701px solid white;
+    border-bottom: 674px solid transparent;
+    top: 0px;
+    left: 0px;
+  }
+  .input-area {
+    padding: 9px;
+    width: 428px;
+    background-color: #2077db;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .fotter-area-img img {
+    width: 570px;
+    height: 24rem;
+    object-fit: contain;
+  }
+}
+@media only screen and (max-width: 762px) {
+  /*Small smartphones [325px -> 425px]*/
+  .hauf-box {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-left: 701px solid white;
+    border-bottom: 536px solid transparent;
+    top: 0px;
+    left: 0px;
+  }
+  .mid-hauf {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 233px solid green;
+    border-left: 3px solid transparent;
+    border-bottom: 292px solid transparent;
+    right: 12px;
+    top: -32px;
+  }
+  .hauf-conten-img {
+    width: 302px;
+    object-fit: contain;
+    margin-left: 158px;
+  }
+  .fotter-area-img img {
+    width: 822px;
+    height: 24rem;
+    object-fit: contain;
+  }
+  .input-area {
+    padding: 9px;
+    width: 428px;
+    background-color: #2077db;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 105px;
+  }
+  .fotter-area-img img {
+    width: 697px;
+    height: 24rem;
+    object-fit: contain;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .hauf-box {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-left: 523px solid white;
+    border-bottom: 537px solid transparent;
+    top: 0px;
+    left: 0px;
+  }
+  .mid-hauf {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 178px solid green;
+    border-left: 3px solid transparent;
+    border-bottom: 240px solid transparent;
+    top: -32px;
+  }
+  .hauf-conten-img {
+    width: 292px;
+    object-fit: contain;
+    margin-left: 135px;
+    height: 31px;
+  }
+  .fotter-area-img img {
+    width: 448px;
+    height: 24rem;
+    object-fit: contain;
+  }
+  .input-area {
+    padding: 9px;
+    width: 309px;
+    background-color: #2077db;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 105px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .hauf-box {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 3px solid transparent;
+    border-left: 350px solid white;
+    border-bottom: 470px solid transparent;
+    top: 0px;
+    left: 0px;
+  }
+  .mid-hauf {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 178px solid green;
+    border-left: 3px solid transparent;
+    border-bottom: 197px solid transparent;
+    top: -32px;
+  }
+  .hauf-conten-img {
+    width: 194px;
+    object-fit: contain;
+    margin-left: 113px;
+  }
+  .mid-contain p {
+    color: black;
+    overflow: scroll;
+    height: 241px;
+  }
+  .fotter-area-img img {
+    width: 365px;
+    height: 24rem;
+    object-fit: contain;
+  }
+  .input-area {
+    padding: 9px;
+    width: 200px;
+    background-color: #2077db;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 105px;
+  }
+  .mid-button a {
+    text-decoration: none;
+    background-color: forestgreen;
+    color: white;
+    padding: 20px;
+    font-weight: bolder;
+    border-radius: 50px;
+  }
 }

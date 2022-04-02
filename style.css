@@ -53,7 +53,12 @@
   width: 414px;
   object-fit: contain;
 }
-.hauf-conten button {
+.header-button {
+  text-decoration: none;
+  background-color: #61ba40;
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
 }
 .header-footer {
   background-color: #2081ef;
@@ -120,46 +125,44 @@
   font-weight: bolder;
   border-radius: 50px;
 }
-/* .fotter-hauf {
+.map-hauf {
   width: 0;
   height: 0;
-  border-right: 1262px solid transparent;
-  border-left: 0px solid transparent;
-  border-bottom: 494px solid gray;
+  border-right: 1234px solid transparent;
+  border-bottom: 751px solid #e6e6e6;
   position: absolute;
   z-index: -1;
-  bottom: 0;
-} */
-.fotter-area {
-  margin-top: 65px;
-  height: 388px;
-  width: 100%;
+  bottom: -123px;
+  left: -15px;
+}
+.map-area {
+  margin-top: 200px;
   position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.fotter-area-img img {
-  width: 822px;
-  height: 24rem;
-  object-fit: contain;
+
+.map-img {
+  display: flex;
+  justify-content: center;
+  transform: scale(2);
+  z-index: -1;
 }
-.fotter-area-img {
-  padding-left: 40px;
-}
-.input-area {
-  padding: 17px;
-  width: 500px;
+.input-conten {
   background-color: #2077db;
   border-radius: 10px 0px 10px 0px;
+  padding: 20px;
+  z-index: 1;
 }
 
-.input-wrtie {
+/* .input-wrtie {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .input-fild {
-}
+} */
 .footer {
   background-image: linear-gradient(
       rgba(28, 57, 89, 0.637),
@@ -181,6 +184,9 @@
 .social-icon img {
   width: 70px;
   height: 70px;
+}
+.footer {
+  margin-top: 118px;
 }
 .footer-manue {
   display: flex;
@@ -205,16 +211,15 @@
     top: 0px;
     left: 0px;
   }
-  .input-area {
-    padding: 9px;
-    width: 428px;
-    background-color: #2077db;
-    border-radius: 10px 0px 10px 0px;
-  }
-  .fotter-area-img img {
-    width: 570px;
-    height: 24rem;
-    object-fit: contain;
+  .map-hauf {
+    width: 0;
+    height: 0;
+    border-right: 1147px solid transparent;
+    border-bottom: 705px solid #e6e6e6;
+    position: absolute;
+    z-index: -1;
+    bottom: -123px;
+    left: 0;
   }
 }
 @media only screen and (max-width: 762px) {
@@ -244,22 +249,22 @@
     object-fit: contain;
     margin-left: 158px;
   }
-  .fotter-area-img img {
-    width: 822px;
-    height: 24rem;
-    object-fit: contain;
+  .map-hauf {
+    width: 0;
+    height: 0;
+    border-right: 770px solid transparent;
+    border-bottom: 1124px solid #e6e6e6;
+    position: absolute;
+    z-index: -1;
+    bottom: -123px;
+    left: -11px;
   }
-  .input-area {
-    padding: 9px;
-    width: 428px;
+  .input-conten {
     background-color: #2077db;
     border-radius: 10px 0px 10px 0px;
-    margin-left: 105px;
-  }
-  .fotter-area-img img {
-    width: 697px;
-    height: 24rem;
-    object-fit: contain;
+    padding: 20px;
+    z-index: 1;
+    margin-top: 134px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -289,17 +294,15 @@
     margin-left: 135px;
     height: 31px;
   }
-  .fotter-area-img img {
-    width: 448px;
-    height: 24rem;
-    object-fit: contain;
-  }
-  .input-area {
-    padding: 9px;
-    width: 309px;
-    background-color: #2077db;
-    border-radius: 10px 0px 10px 0px;
-    margin-left: 105px;
+  .map-hauf {
+    width: 0;
+    height: 0;
+    border-right: 657px solid transparent;
+    border-bottom: 1124px solid #e6e6e6;
+    position: absolute;
+    z-index: -1;
+    bottom: -123px;
+    left: -11px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -309,7 +312,7 @@
     width: 0;
     height: 0;
     border-right: 3px solid transparent;
-    border-left: 350px solid white;
+    border-left: 300px solid white;
     border-bottom: 470px solid transparent;
     top: 0px;
     left: 0px;
@@ -333,11 +336,7 @@
     overflow: scroll;
     height: 241px;
   }
-  .fotter-area-img img {
-    width: 365px;
-    height: 24rem;
-    object-fit: contain;
-  }
+
   .input-area {
     padding: 9px;
     width: 200px;
@@ -352,5 +351,18 @@
     padding: 20px;
     font-weight: bolder;
     border-radius: 50px;
+  }
+  .albam img {
+    width: 267px;
+  }
+  .map-hauf {
+    width: 0;
+    height: 0;
+    border-right: 330px solid transparent;
+    border-bottom: 807px solid #e6e6e6;
+    position: absolute;
+    z-index: -1;
+    bottom: -123px;
+    left: -11px;
   }
 }
